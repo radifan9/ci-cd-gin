@@ -23,5 +23,3 @@ RUN chmod +x server
 EXPOSE 8080
 
 CMD [ "./server"]
-
-
