@@ -22,6 +22,7 @@ func main() {
 				{Id: 1, Name: "Slamet"},
 				{Id: 2, Name: "Darari"},
 				{Id: 3, Name: "Ucuuup"},
+				{Id: 4, Name: "Ceeee"},
 			},
 		})
 	})
