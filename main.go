@@ -1,7 +1,17 @@
 package main
 
-import "log"
+import (
+	"log"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
-	log.Println("Hello world!")
+	r := gin.Default()
+	r.GET("/", func(ctx *gin.Context) {
+		ctx.String(http.StatusOK, "Welcome to backend")
+	})
+	r.Run(":8080")
+	log.Println("Backend is Running")
 }
